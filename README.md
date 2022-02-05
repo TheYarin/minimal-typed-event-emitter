@@ -6,10 +6,10 @@ Documentation of original EventEmitter is preserved.
 Listener parameter names are supported.  
 All member methods of `EventEmitter` are supported.
 
-![Intellisense detects the types](./images/intellisense-detects-the-types.png)
+![Intellisense detects the types](./images/intellisense-detects-the-types.png)  
+(You can use any parameter name you wish)  
 
 ![Intellisense detects the types](./images/how-it-feels-to-use-minimal-typed-event-emitter.png)
-
 
 ## Usage
 
@@ -28,7 +28,7 @@ import { TypedEventEmitter } from "minimal-typed-event-emitter";
 
 type Events = {
   "event-with-no-parameters": [];
-  "event-with-one-parameter": [param1: string]; // You can use any parameter name
+  "event-with-one-parameter": [param1: string]; // You can use any parameter name you wish
   "event-with-two-parameters-one-optional": [param1: number, param2?: { inner: string }];
 };
 
@@ -50,7 +50,7 @@ import { TypedEventEmitter } from "minimal-typed-event-emitter";
 
 type Events = {
   "event-with-no-parameters": [];
-  "event-with-one-parameter": [param1: string];
+  "event-with-one-parameter": [param1: string]; // You can use any parameter name you wish
   "event-with-two-parameters-one-optional": [param1: number, param2?: { inner: string }];
 };
 
